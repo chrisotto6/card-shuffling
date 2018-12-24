@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Card Shuffling</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Card Shuffling</a>
+        </div>
+        
+        <div class="center">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="players" placeholder="Number of players" aria-label="Number of Players" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="addPlayers">Add Players</button>
+                </div>
+            </div>
+
+            <div class="playerList" id="playerArea">
+                <!--Place holder div for the number of players passed in.-->
+            </div>
+        </div>
+        <script src="lib/bundle.js"></script>
+    </body>
+</html>

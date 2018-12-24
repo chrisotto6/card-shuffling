@@ -1,0 +1,40 @@
+{
+  "name": "card-shuffling",
+  "version": "1.0.0",
+  "description": "Creates, shuffles and deals a deck of cards to a user determined number of people.",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha",
+    "browser": "cd lib && browserify main.js -o bundle.js",
+    "babel": "./node_modules/.bin/babel src --out-dir lib",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisotto6/card-shuffling.git"
+  },
+  "keywords": [
+    "babel",
+    "browserify",
+    "javascript",
+    "node"
+  ],
+  "author": "Chris Otto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisotto6/card-shuffling/issues"
+  },
+  "homepage": "https://github.com/chrisotto6/card-shuffling#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "browserify": "^16.2.3",
+    "chai": "^4.2.0",
+    "http-server": "^0.11.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
+}

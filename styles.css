@@ -1,0 +1,15 @@
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.playerList {
+  display: flex;
+}
+
+.card {
+  width: 20%;
+  flex-wrap: wrap;
+}
