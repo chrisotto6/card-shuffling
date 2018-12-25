@@ -7,11 +7,16 @@ let players;
 document.getElementById("addPlayers").addEventListener("click", e => {
         // Get the value the user entered for number of players and clear the player list area if there was a previous session
         players = document.getElementById("players").value;
+        players = parseFloat(players);
         clearArea();
 
         // Make the number added is a positive number great than zero.
         if (players <= 0) {
             alert('The numbers of players has to be greater than 0.');
+            document.getElementById("players").value = "";
+        }
+        else if (players > 52) {
+            alert('The numbers of players has to be less than or equal to 52.');
             document.getElementById("players").value = "";
         }
         else {
