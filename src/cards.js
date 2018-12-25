@@ -31,7 +31,7 @@ export class CardDeck {
        let cdl = cardDeck.length;
        let i;
 
-       /* Loop through the deck, using Math.random() swap the two items locations in the array */
+       // Loop through the deck, using Math.random() swap the two items locations in the array
        while(cdl) {
             i = Math.floor(Math.random() * cdl--);
 

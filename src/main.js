@@ -20,12 +20,18 @@ document.getElementById("addPlayers").addEventListener("click", e => {
         deck.restore();
 });
 
+/*
+ * Clears the area where the hands of each player are displayed
+ */
 function clearArea() {
     while (playerArea.firstChild) {
         playerArea.removeChild(playerArea.firstChild);
     }
 }
 
+/* 
+ * Takes in a shuffled deck, utilizing the cardDeck classes deal function, create a two dimensional array to house the players and their cards.
+ */
 function dealToPlayers(deckOfCards, numberOfPlayers) {
     let cdl = deckOfCards.cardDeck.length;
     let dealtDeck = [];
@@ -51,6 +57,9 @@ function dealToPlayers(deckOfCards, numberOfPlayers) {
     return dealtDeck;
 }
 
+/*
+ * Utilizing the dealtDeck from dealToPlayers, now display each player and their cards to the user.
+ */
 function playerToClient(deckOfCards) {
     let dealer = deckOfCards;
 
