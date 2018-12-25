@@ -22,7 +22,7 @@ Combines the output from Babel into a single Javascript file. This is needed bec
 ### HTTP-Server
 A simple tool used to start a service pointing to the index.html and defaults to localhost:8080.
 ### Mocha and Chai
-Used to unit the cardDeck class.
+Used to unit test the cardDeck class.
 
 ## Contributing
 In order to contribute to this repository the following build steps will need to be followed, using Babel, Browserify and HTTP-Server.
