@@ -9,13 +9,20 @@ document.getElementById("addPlayers").addEventListener("click", e => {
         players = document.getElementById("players").value;
         clearArea();
 
-        // Shuffle and deal the cards out to the amount of players
-        deck.shuffle();
-        let dealt = dealToPlayers(deck, players);
+        // Make the number added is a positive number great than zero.
+        if (players <= 0) {
+            alert('The numbers of players has to be greater than 0.');
+            document.getElementById("players").value = "";
+        }
+        else {
+            // Shuffle and deal the cards out to the amount of players
+            deck.shuffle();
+            let dealt = dealToPlayers(deck, players);
 
-        // Take the players and cards and apply their values to the page
-        playerToClient(dealt);
-
+            // Take the players and cards and apply their values to the page
+            playerToClient(dealt);
+        }
+        
         // There is no other user interaction with the deck so restore it
         deck.restore();
 });
