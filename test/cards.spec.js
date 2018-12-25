@@ -10,7 +10,7 @@ describe('Card Deck Tests', function() {
         it('Should have a length of 52', function() {
             assert.lengthOf(deck.cardDeck, 52, 'Array is 52 characters long.');
         });
-        it('Should have 2s in consistent possitions', function() {
+        it('Should have 2s in consistent positions', function() {
             assert.equal(deck.cardDeck[0], '2 of Spades');
             assert.equal(deck.cardDeck[13], '2 of Hearts');
             assert.equal(deck.cardDeck[26], '2 of Diamonds');
@@ -37,7 +37,7 @@ describe('Card Deck Tests', function() {
         it('Should have a length of 52', function() {
             assert.lengthOf(deck.cardDeck, 52, 'Array is 52 characters long.');
         });
-        it('Should have 2s in consistent possitions', function() {
+        it('Should have 2s in consistent positions', function() {
             assert.equal(deck.cardDeck[0], '2 of Spades');
             assert.equal(deck.cardDeck[13], '2 of Hearts');
             assert.equal(deck.cardDeck[26], '2 of Diamonds');
