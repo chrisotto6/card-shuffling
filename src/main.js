@@ -5,12 +5,12 @@ let deck = new CardDeck();
 let players;
 
 document.getElementById("addPlayers").addEventListener("click", e => {
-    // Get the value the user entered for number of players and clear the player list area if there was a previous session
+    // Get the value the user entered for the number of players and clear the player list area if there was a previous session
     players = document.getElementById("players").value;
     players = parseFloat(players);
     clearArea();
 
-    // Make the number added is a positive number great than zero.
+    // Make sure the number added is a positive number greater than zero.
     if (players <= 0) {
         alert('The numbers of players has to be greater than 0.');
         document.getElementById("players").value = "";
@@ -50,7 +50,7 @@ function clearArea() {
 }
 
 /* 
- * Takes in a shuffled deck, utilizing the cardDeck classes deal function, create a two dimensional array to house the players and their cards.
+ * Takes in a shuffled deck, utilizing the cardDeck classes deal function to create a two dimensional array to house the players and their cards
  */
 function dealToPlayers(deckOfCards, numberOfPlayers) {
     let cdl = deckOfCards.cardDeck.length;
@@ -78,7 +78,7 @@ function dealToPlayers(deckOfCards, numberOfPlayers) {
 }
 
 /*
- * Utilizing the dealtDeck from dealToPlayers, now display each player and their cards to the user.
+ * Taking the dealtDeck from dealToPlayers, display each player and their cards to the user
  */
 function playerToClient(deckOfCards) {
     let dealer = deckOfCards;
