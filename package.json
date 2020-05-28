@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/preset-env": "^7.9.6",
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^7.10.1",
     "browserify": "^16.5.1",
     "chai": "^4.2.0",
     "http-server": "^0.12.3",
