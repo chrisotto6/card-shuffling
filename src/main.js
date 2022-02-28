@@ -11,7 +11,10 @@ document.getElementById("addPlayers").addEventListener("click", e => {
   clearArea();
 
   // Make sure the number added is a positive number greater than zero.
-  if (players <= 0) {
+  if (isNan(players)) {
+    alert("The numbers of players has to be a number.");
+    document.getElementById("players").value = "";
+  } else if (players <= 0) {
     alert("The numbers of players has to be greater than 0.");
     document.getElementById("players").value = "";
   } else if (players > 52) {
