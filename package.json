@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/chrisotto6/card-shuffling#readme",
   "devDependencies": {
-    "@babel/cli": "^7.13.0",
+    "@babel/cli": "^7.20.7",
     "@babel/preset-env": "^7.19.3",
     "@babel/core": "^7.19.3",
     "browserify": "^17.0.0",
